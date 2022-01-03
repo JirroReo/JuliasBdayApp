@@ -8,6 +8,7 @@ import {
   FlatList,
   ScrollView,
   TouchableOpacity,
+  ImageBackground
 } from 'react-native';
 import Feather from 'react-native-vector-icons/Feather';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -22,6 +23,7 @@ Feather.loadFont();
 MaterialCommunityIcons.loadFont();
 
 export default Home = ({ navigation }) => {
+
   const renderReasonItem = ({ item }) => {
     return (
       <View
@@ -106,13 +108,21 @@ export default Home = ({ navigation }) => {
                 justifyContent: 'center',
               },
             ]}>
-              <FlatList
+              {/* <FlatList
               showsHorizontalScrollIndicator={false}
               data={christmasData}
               renderItem={renderMemoryItem}
               keyExtractor={(item) => item.id}
               horizontal={true}
-            />
+              /> */}
+              <Carousel
+                ref={c => carousel = c }
+                renderItem={renderMemoryItem}
+                sliderWidth={350}
+                itemWidth={350}
+                layout={"stack"}
+                data={christmasData}
+              />
           </View>
         </View>
       </ScrollView>
@@ -189,11 +199,11 @@ const styles = StyleSheet.create({
   },
   memoryItemImage: {
     borderRadius: 5,
-    height: 250,
-    width: 50,
+    height: 200,
+    width: 120,
     padding: 50,
     marginTop: 10,
-    alignSelf: 'center',
+    alignSelf: 'center'
   },
   categoryItemWrapper: {
     backgroundColor: '#F5CA48',
