@@ -11,16 +11,18 @@ import {
 } from 'react-native';
 import Feather from 'react-native-vector-icons/Feather';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import categoriesData from '../assets/data/categoriesData';
+import reasonData from '../assets/data/reasonData';
 import popularData from '../assets/data/popularData';
+import christmasData from '../assets/data/christmasData';
 import colors from '../assets/colors/colors';
+import Carousel from 'react-native-snap-carousel';
 import { color, round } from 'react-native-reanimated';
 
 Feather.loadFont();
 MaterialCommunityIcons.loadFont();
 
 export default Home = ({ navigation }) => {
-  const renderCategoryItem = ({ item }) => {
+  const renderReasonItem = ({ item }) => {
     return (
       <View
         style={[
@@ -32,20 +34,17 @@ export default Home = ({ navigation }) => {
         ]}>
         <Image source={item.image} style={styles.categoryItemImage} />
         <Text style={styles.categoryItemTitle}>{item.title}</Text>
-        <View
-          style={[
-            styles.categorySelectWrapper,
-            {
-              backgroundColor: item.selected ? colors.white : colors.secondary,
-            },
-          ]}>
-          <Feather
-            name="chevron-right"
-            size={8}
-            style={styles.categorySelectIcon}
-            color={item.selected ? colors.black : colors.white}
-          />
-        </View>
+      </View>
+    );
+  };
+
+  const renderMemoryItem = ({ item }) => {
+    return (
+      <View
+        style={[
+          styles.memoryItemWrapper
+        ]}>
+        <Image source={item.image} style={styles.memoryItemImage} />
       </View>
     );
   };
@@ -59,98 +58,62 @@ export default Home = ({ navigation }) => {
         <SafeAreaView>
           <View style={styles.headerWrapper}>
             <Image
-              source={require('../assets/images/profile.png')}
+              source={require('../assets/images/olet.jpg')}
               style={styles.profileImage}
             />
-            <Feather name="menu" size={24} color={colors.textDark} />
           </View>
         </SafeAreaView>
 
         {/* Titles */}
-        <View style={styles.titlesWrapper}>
-          <Text style={styles.titlesSubtitle}>Food</Text>
-          <Text style={styles.titlesTitle}>Delivery</Text>
+        <View style={styles.topTitlesWrapper}>
+          <Text numberOfLines={1} style={{marginBottom: '-5px'}} style={styles.titlesSubtitle}>Hey,</Text>
+          <Text numberOfLines={1} style={styles.titlesTitle}>Happy Birthday!</Text>
         </View>
 
-        {/* Search */}
-        <View style={styles.searchWrapper}>
-          <Feather name="search" size={16} color={colors.textDark} />
-          <View style={styles.search}>
-            <Text style={styles.searchText}>Search</Text>
-          </View>
+        <View style={{marginTop: 10}} style={styles.topTitlesWrapper}>
+          <Text style={styles.categoriesTitle}>Hooray! 🎉</Text>
+          <Text style={styles.messageItemTitle}>It's the birthday of everyone's favorite ENFP!</Text>
+          <Text style={styles.messageItemTitle}>Happy birthday baby! I hope you like this</Text>
+          <Text style={styles.messageItemTitle}>little gift.</Text>
         </View>
 
-        {/* Categories */}
+        {/* Reasons */}
         <View style={styles.categoriesWrapper}>
-          <Text style={styles.categoriesTitle}>Categories</Text>
+          <Text style={{paddingHorizontal: 20}}>
+          <Text style={styles.categoriesTitle}>Why I Love You</Text><Text style={styles.categoryItemTitle}>  (In case u forgot)</Text>
+          </Text>
           <View style={styles.categoriesListWrapper}>
             <FlatList
-              data={categoriesData}
-              renderItem={renderCategoryItem}
+              showsHorizontalScrollIndicator={false}
+              data={reasonData}
+              renderItem={renderReasonItem}
               keyExtractor={(item) => item.id}
               horizontal={true}
             />
           </View>
         </View>
 
-        {/* Popular */}
+        {/* Memories */}
         <View style={styles.popularWrapper}>
-          <Text style={styles.popularTitle}>Popular</Text>
-          {popularData.map((item) => (
-            <TouchableOpacity
-              key={item.id}
-              onPress={() =>
-                navigation.navigate('Details', {
-                  item: item,
-                })
-              }>
-              <View
-                style={[
-                  styles.popularCardWrapper,
-                  {
-                    marginTop: item.id == 1 ? 10 : 20,
-                  },
-                ]}>
-                <View>
-                  <View>
-                    <View style={styles.popularTopWrapper}>
-                      <MaterialCommunityIcons
-                        name="crown"
-                        size={12}
-                        color={colors.primary}
-                      />
-                      <Text style={styles.popularTopText}>top of the week</Text>
-                    </View>
-                    <View style={styles.popularTitlesWrapper}>
-                      <Text style={styles.popularTitlesTitle}>
-                        {item.title}
-                      </Text>
-                      <Text style={styles.popularTitlesWeight}>
-                        Weight {item.weight}
-                      </Text>
-                    </View>
-                  </View>
-                  <View style={styles.popularCardBottom}>
-                    <View style={styles.addPizzaButton}>
-                      <Feather name="plus" size={10} color={colors.textDark} />
-                    </View>
-                    <View style={styles.ratingWrapper}>
-                      <MaterialCommunityIcons
-                        name="star"
-                        size={10}
-                        color={colors.textDark}
-                      />
-                      <Text style={styles.rating}>{item.rating}</Text>
-                    </View>
-                  </View>
-                </View>
-
-                <View style={styles.popularCardRight}>
-                  <Image source={item.image} style={styles.popularCardImage} />
-                </View>
-              </View>
-            </TouchableOpacity>
-          ))}
+          <Text style={styles.popularTitle}>Our Memory Board</Text>
+          <View
+            style={[
+              styles.popularCardWrapper,
+              {
+                marginTop: 20,
+                flex: 1,
+                flexDirection:'row',
+                justifyContent: 'center',
+              },
+            ]}>
+              <FlatList
+              showsHorizontalScrollIndicator={false}
+              data={christmasData}
+              renderItem={renderMemoryItem}
+              keyExtractor={(item) => item.id}
+              horizontal={true}
+            />
+          </View>
         </View>
       </ScrollView>
     </View>
@@ -163,15 +126,21 @@ const styles = StyleSheet.create({
   },
   headerWrapper: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
     paddingHorizontal: 20,
-    paddingTop: 20,
+    paddingTop: 50,
     alignItems: 'center',
   },
   profileImage: {
-    width: 40,
-    height: 40,
-    borderRadius: 40,
+    width: 100,
+    height: 100,
+    borderRadius: 100,
+  },
+  topTitlesWrapper: {
+    marginTop: 20,
+    textAlign: 'center',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   titlesWrapper: {
     marginTop: 30,
@@ -194,20 +163,15 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     marginTop: 30,
   },
-  search: {
-    flex: 1,
-    marginLeft: 10,
-    borderBottomColor: colors.textLight,
-    borderBottomWidth: 2,
-  },
-  searchText: {
-    fontFamily: 'Montserrat-Semibold',
+  messageItemTitle: {
+    textAlign: 'center',
+    fontFamily: 'Montserrat-Medium',
     fontSize: 14,
-    marginBottom: 5,
-    color: colors.textLight,
+    marginTop: 5,
   },
   categoriesWrapper: {
     marginTop: 30,
+    paddingBottom: 20
   },
   categoriesTitle: {
     fontFamily: 'Montserrat-Bold',
@@ -217,6 +181,19 @@ const styles = StyleSheet.create({
   categoriesListWrapper: {
     paddingTop: 15,
     paddingBottom: 20,
+  },
+  memoryItemWrapper: {
+    marginRight: 20,
+    borderRadius: 20,
+    paddingBottom: 20
+  },
+  memoryItemImage: {
+    borderRadius: 5,
+    height: 250,
+    width: 50,
+    padding: 50,
+    marginTop: 10,
+    alignSelf: 'center',
   },
   categoryItemWrapper: {
     backgroundColor: '#F5CA48',
@@ -230,6 +207,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.05,
     shadowRadius: 10,
     elevation: 2,
+    paddingBottom: 20
   },
   categoryItemImage: {
     width: 60,
@@ -243,6 +221,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Montserrat-Medium',
     fontSize: 14,
     marginTop: 10,
+    paddingVertical: 5,
   },
   categorySelectWrapper: {
     alignSelf: 'center',
@@ -264,20 +243,9 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   popularCardWrapper: {
-    backgroundColor: colors.white,
     borderRadius: 25,
-    paddingTop: 20,
-    paddingLeft: 20,
     flexDirection: 'row',
     overflow: 'hidden',
-    shadowColor: colors.black,
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.05,
-    shadowRadius: 10,
-    elevation: 2,
   },
   popularTopWrapper: {
     flexDirection: 'row',

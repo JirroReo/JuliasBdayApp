@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* foodappuiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* foodappuiTests.m */; };
-		02D88CEE0D7B3409F10A2C8D /* libPods-foodappui-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54281C28310C29079B418F1E /* libPods-foodappui-tvOS.a */; };
+		00E356F31AD99517003FC87E /* mhine28Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* mhine28Tests.m */; };
+		02D88CEE0D7B3409F10A2C8D /* libPods-mhine28-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54281C28310C29079B418F1E /* libPods-mhine28-tvOS.a */; };
 		047A4D6EF7B743ECB26E0D1C /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03103622E84048A19F2A9B41 /* Montserrat-Medium.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -17,13 +17,13 @@
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* foodappuiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* foodappuiTests.m */; };
-		48F50F109698F24A2A3B47FC /* libPods-foodappui.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62DB8849791D28ED3C56582B /* libPods-foodappui.a */; };
+		2DCD954D1E0B4F2C00145EB5 /* mhine28Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* mhine28Tests.m */; };
+		48F50F109698F24A2A3B47FC /* libPods-mhine28.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62DB8849791D28ED3C56582B /* libPods-mhine28.a */; };
 		629AF49DFF1E40BF93CF4C09 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71706F21E2D64DA2A584FFC0 /* Montserrat-SemiBold.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		A02F4E3D610D4F1F81FAE82C /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 724FAE3BA65D4D0AACACC78E /* Montserrat-Regular.ttf */; };
-		AA747EAEEC5BBD50AF13185F /* libPods-foodappui-foodappuiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02EB436466D1826B3BFF615E /* libPods-foodappui-foodappuiTests.a */; };
-		BCEAABAA911B73E717A018CB /* libPods-foodappui-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D3A4EDA9D2F9B6E970C545 /* libPods-foodappui-tvOSTests.a */; };
+		AA747EAEEC5BBD50AF13185F /* libPods-mhine28-mhine28Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02EB436466D1826B3BFF615E /* libPods-mhine28-mhine28Tests.a */; };
+		BCEAABAA911B73E717A018CB /* libPods-mhine28-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D3A4EDA9D2F9B6E970C545 /* libPods-mhine28-tvOSTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,49 +32,49 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = foodappui;
+			remoteInfo = mhine28;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "foodappui-tvOS";
+			remoteInfo = "mhine28-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* foodappuiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = foodappuiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* mhine28Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mhine28Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* foodappuiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = foodappuiTests.m; sourceTree = "<group>"; };
-		02EB436466D1826B3BFF615E /* libPods-foodappui-foodappuiTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-foodappui-foodappuiTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F21AD99517003FC87E /* mhine28Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mhine28Tests.m; sourceTree = "<group>"; };
+		02EB436466D1826B3BFF615E /* libPods-mhine28-mhine28Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mhine28-mhine28Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03103622E84048A19F2A9B41 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Medium.ttf"; path = "../assets/fonts/Montserrat-Medium.ttf"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* foodappui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = foodappui.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = foodappui/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = foodappui/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = foodappui/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = foodappui/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = foodappui/main.m; sourceTree = "<group>"; };
-		179091EE243A82059BC6A5F9 /* Pods-foodappui.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodappui.debug.xcconfig"; path = "Target Support Files/Pods-foodappui/Pods-foodappui.debug.xcconfig"; sourceTree = "<group>"; };
-		214D5817E732E0010DB425E1 /* Pods-foodappui-foodappuiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodappui-foodappuiTests.release.xcconfig"; path = "Target Support Files/Pods-foodappui-foodappuiTests/Pods-foodappui-foodappuiTests.release.xcconfig"; sourceTree = "<group>"; };
-		2AB047B6B5556E3065CBA380 /* Pods-foodappui-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodappui-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-foodappui-tvOSTests/Pods-foodappui-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		2CB75A85EEF1E9720C5EBA61 /* Pods-foodappui-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodappui-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-foodappui-tvOS/Pods-foodappui-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* foodappui-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "foodappui-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* foodappui-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "foodappui-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		54281C28310C29079B418F1E /* libPods-foodappui-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-foodappui-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		586DAC631036625B3C5A7F30 /* Pods-foodappui-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodappui-tvOS.release.xcconfig"; path = "Target Support Files/Pods-foodappui-tvOS/Pods-foodappui-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		62DB8849791D28ED3C56582B /* libPods-foodappui.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-foodappui.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* mhine28.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mhine28.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = mhine28/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = mhine28/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = mhine28/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = mhine28/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = mhine28/main.m; sourceTree = "<group>"; };
+		179091EE243A82059BC6A5F9 /* Pods-mhine28.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mhine28.debug.xcconfig"; path = "Target Support Files/Pods-mhine28/Pods-mhine28.debug.xcconfig"; sourceTree = "<group>"; };
+		214D5817E732E0010DB425E1 /* Pods-mhine28-mhine28Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mhine28-mhine28Tests.release.xcconfig"; path = "Target Support Files/Pods-mhine28-mhine28Tests/Pods-mhine28-mhine28Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2AB047B6B5556E3065CBA380 /* Pods-mhine28-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mhine28-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-mhine28-tvOSTests/Pods-mhine28-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		2CB75A85EEF1E9720C5EBA61 /* Pods-mhine28-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mhine28-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-mhine28-tvOS/Pods-mhine28-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* mhine28-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mhine28-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* mhine28-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mhine28-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54281C28310C29079B418F1E /* libPods-mhine28-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mhine28-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		586DAC631036625B3C5A7F30 /* Pods-mhine28-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mhine28-tvOS.release.xcconfig"; path = "Target Support Files/Pods-mhine28-tvOS/Pods-mhine28-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		62DB8849791D28ED3C56582B /* libPods-mhine28.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mhine28.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71706F21E2D64DA2A584FFC0 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-SemiBold.ttf"; path = "../assets/fonts/Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		724FAE3BA65D4D0AACACC78E /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Regular.ttf"; path = "../assets/fonts/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = foodappui/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A4D3A4EDA9D2F9B6E970C545 /* libPods-foodappui-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-foodappui-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7F306D8CCC7E3A155791665 /* Pods-foodappui-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodappui-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-foodappui-tvOSTests/Pods-foodappui-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = mhine28/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A4D3A4EDA9D2F9B6E970C545 /* libPods-mhine28-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mhine28-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7F306D8CCC7E3A155791665 /* Pods-mhine28-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mhine28-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-mhine28-tvOSTests/Pods-mhine28-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C4B7640669714B66A971C940 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Bold.ttf"; path = "../assets/fonts/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
-		C6740FB1AE0B9B7E793A335C /* Pods-foodappui-foodappuiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodappui-foodappuiTests.debug.xcconfig"; path = "Target Support Files/Pods-foodappui-foodappuiTests/Pods-foodappui-foodappuiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C6740FB1AE0B9B7E793A335C /* Pods-mhine28-mhine28Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mhine28-mhine28Tests.debug.xcconfig"; path = "Target Support Files/Pods-mhine28-mhine28Tests/Pods-mhine28-mhine28Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		F036FCCA85BE98B6916E098D /* Pods-foodappui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodappui.release.xcconfig"; path = "Target Support Files/Pods-foodappui/Pods-foodappui.release.xcconfig"; sourceTree = "<group>"; };
+		F036FCCA85BE98B6916E098D /* Pods-mhine28.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mhine28.release.xcconfig"; path = "Target Support Files/Pods-mhine28/Pods-mhine28.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA747EAEEC5BBD50AF13185F /* libPods-foodappui-foodappuiTests.a in Frameworks */,
+				AA747EAEEC5BBD50AF13185F /* libPods-mhine28-mhine28Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48F50F109698F24A2A3B47FC /* libPods-foodappui.a in Frameworks */,
+				48F50F109698F24A2A3B47FC /* libPods-mhine28.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02D88CEE0D7B3409F10A2C8D /* libPods-foodappui-tvOS.a in Frameworks */,
+				02D88CEE0D7B3409F10A2C8D /* libPods-mhine28-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,20 +106,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCEAABAA911B73E717A018CB /* libPods-foodappui-tvOSTests.a in Frameworks */,
+				BCEAABAA911B73E717A018CB /* libPods-mhine28-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* foodappuiTests */ = {
+		00E356EF1AD99517003FC87E /* mhine28Tests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* foodappuiTests.m */,
+				00E356F21AD99517003FC87E /* mhine28Tests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = foodappuiTests;
+			path = mhine28Tests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -130,7 +130,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* foodappui */ = {
+		13B07FAE1A68108700A75B9A /* mhine28 */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -141,7 +141,7 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = foodappui;
+			name = mhine28;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -149,10 +149,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				62DB8849791D28ED3C56582B /* libPods-foodappui.a */,
-				02EB436466D1826B3BFF615E /* libPods-foodappui-foodappuiTests.a */,
-				54281C28310C29079B418F1E /* libPods-foodappui-tvOS.a */,
-				A4D3A4EDA9D2F9B6E970C545 /* libPods-foodappui-tvOSTests.a */,
+				62DB8849791D28ED3C56582B /* libPods-mhine28.a */,
+				02EB436466D1826B3BFF615E /* libPods-mhine28-mhine28Tests.a */,
+				54281C28310C29079B418F1E /* libPods-mhine28-tvOS.a */,
+				A4D3A4EDA9D2F9B6E970C545 /* libPods-mhine28-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -172,14 +172,14 @@
 		63F16BB39D5906366946E909 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				179091EE243A82059BC6A5F9 /* Pods-foodappui.debug.xcconfig */,
-				F036FCCA85BE98B6916E098D /* Pods-foodappui.release.xcconfig */,
-				C6740FB1AE0B9B7E793A335C /* Pods-foodappui-foodappuiTests.debug.xcconfig */,
-				214D5817E732E0010DB425E1 /* Pods-foodappui-foodappuiTests.release.xcconfig */,
-				2CB75A85EEF1E9720C5EBA61 /* Pods-foodappui-tvOS.debug.xcconfig */,
-				586DAC631036625B3C5A7F30 /* Pods-foodappui-tvOS.release.xcconfig */,
-				A7F306D8CCC7E3A155791665 /* Pods-foodappui-tvOSTests.debug.xcconfig */,
-				2AB047B6B5556E3065CBA380 /* Pods-foodappui-tvOSTests.release.xcconfig */,
+				179091EE243A82059BC6A5F9 /* Pods-mhine28.debug.xcconfig */,
+				F036FCCA85BE98B6916E098D /* Pods-mhine28.release.xcconfig */,
+				C6740FB1AE0B9B7E793A335C /* Pods-mhine28-mhine28Tests.debug.xcconfig */,
+				214D5817E732E0010DB425E1 /* Pods-mhine28-mhine28Tests.release.xcconfig */,
+				2CB75A85EEF1E9720C5EBA61 /* Pods-mhine28-tvOS.debug.xcconfig */,
+				586DAC631036625B3C5A7F30 /* Pods-mhine28-tvOS.release.xcconfig */,
+				A7F306D8CCC7E3A155791665 /* Pods-mhine28-tvOSTests.debug.xcconfig */,
+				2AB047B6B5556E3065CBA380 /* Pods-mhine28-tvOSTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -195,9 +195,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* foodappui */,
+				13B07FAE1A68108700A75B9A /* mhine28 */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* foodappuiTests */,
+				00E356EF1AD99517003FC87E /* mhine28Tests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				63F16BB39D5906366946E909 /* Pods */,
@@ -211,10 +211,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* foodappui.app */,
-				00E356EE1AD99517003FC87E /* foodappuiTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* foodappui-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* foodappui-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* mhine28.app */,
+				00E356EE1AD99517003FC87E /* mhine28Tests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* mhine28-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* mhine28-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -222,9 +222,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* foodappuiTests */ = {
+		00E356ED1AD99517003FC87E /* mhine28Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "foodappuiTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "mhine28Tests" */;
 			buildPhases = (
 				0D32259F2110B0959B6068ED /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -237,14 +237,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = foodappuiTests;
-			productName = foodappuiTests;
-			productReference = 00E356EE1AD99517003FC87E /* foodappuiTests.xctest */;
+			name = mhine28Tests;
+			productName = mhine28Tests;
+			productReference = 00E356EE1AD99517003FC87E /* mhine28Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* foodappui */ = {
+		13B07F861A680F5B00A75B9A /* mhine28 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "foodappui" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "mhine28" */;
 			buildPhases = (
 				6155330E243463F187136305 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -258,14 +258,14 @@
 			);
 			dependencies = (
 			);
-			name = foodappui;
-			productName = foodappui;
-			productReference = 13B07F961A680F5B00A75B9A /* foodappui.app */;
+			name = mhine28;
+			productName = mhine28;
+			productReference = 13B07F961A680F5B00A75B9A /* mhine28.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* foodappui-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* mhine28-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "foodappui-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "mhine28-tvOS" */;
 			buildPhases = (
 				B5723C713E6A724F1729D677 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
@@ -278,14 +278,14 @@
 			);
 			dependencies = (
 			);
-			name = "foodappui-tvOS";
-			productName = "foodappui-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* foodappui-tvOS.app */;
+			name = "mhine28-tvOS";
+			productName = "mhine28-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* mhine28-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* foodappui-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* mhine28-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "foodappui-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "mhine28-tvOSTests" */;
 			buildPhases = (
 				6FD48BF5E5B587B254EBD113 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
@@ -297,9 +297,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "foodappui-tvOSTests";
-			productName = "foodappui-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* foodappui-tvOSTests.xctest */;
+			name = "mhine28-tvOSTests";
+			productName = "mhine28-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* mhine28-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -328,7 +328,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "foodappui" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "mhine28" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -341,10 +341,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* foodappui */,
-				00E356ED1AD99517003FC87E /* foodappuiTests */,
-				2D02E47A1E0B4A5D006451C7 /* foodappui-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* foodappui-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* mhine28 */,
+				00E356ED1AD99517003FC87E /* mhine28Tests */,
+				2D02E47A1E0B4A5D006451C7 /* mhine28-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* mhine28-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -417,7 +417,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-foodappui-foodappuiTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-mhine28-mhine28Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -444,7 +444,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-foodappui-foodappuiTests/Pods-foodappui-foodappuiTests-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-mhine28-mhine28Tests/Pods-mhine28-mhine28Tests-resources.sh",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
@@ -485,7 +485,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-foodappui-foodappuiTests/Pods-foodappui-foodappuiTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mhine28-mhine28Tests/Pods-mhine28-mhine28Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4069E30179A6EEB99EFAB21C /* [CP] Copy Pods Resources */ = {
@@ -494,7 +494,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-foodappui/Pods-foodappui-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-mhine28/Pods-mhine28-resources.sh",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
@@ -535,7 +535,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-foodappui/Pods-foodappui-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mhine28/Pods-mhine28-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6155330E243463F187136305 /* [CP] Check Pods Manifest.lock */ = {
@@ -553,7 +553,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-foodappui-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-mhine28-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -575,7 +575,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-foodappui-tvOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-mhine28-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -597,7 +597,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-foodappui-tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-mhine28-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -649,7 +649,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* foodappuiTests.m in Sources */,
+				00E356F31AD99517003FC87E /* mhine28Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -675,7 +675,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* foodappuiTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* mhine28Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,12 +684,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* foodappui */;
+			target = 13B07F861A680F5B00A75B9A /* mhine28 */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* foodappui-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* mhine28-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -697,14 +697,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6740FB1AE0B9B7E793A335C /* Pods-foodappui-foodappuiTests.debug.xcconfig */;
+			baseConfigurationReference = C6740FB1AE0B9B7E793A335C /* Pods-mhine28-mhine28Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = foodappuiTests/Info.plist;
+				INFOPLIST_FILE = mhine28Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -714,17 +714,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/foodappui.app/foodappui";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mhine28.app/mhine28";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 214D5817E732E0010DB425E1 /* Pods-foodappui-foodappuiTests.release.xcconfig */;
+			baseConfigurationReference = 214D5817E732E0010DB425E1 /* Pods-mhine28-mhine28Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = foodappuiTests/Info.plist;
+				INFOPLIST_FILE = mhine28Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -734,19 +734,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/foodappui.app/foodappui";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mhine28.app/mhine28";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 179091EE243A82059BC6A5F9 /* Pods-foodappui.debug.xcconfig */;
+			baseConfigurationReference = 179091EE243A82059BC6A5F9 /* Pods-mhine28.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = foodappui/Info.plist;
+				INFOPLIST_FILE = mhine28/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -754,7 +754,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = foodappui;
+				PRODUCT_NAME = mhine28;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -763,12 +763,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F036FCCA85BE98B6916E098D /* Pods-foodappui.release.xcconfig */;
+			baseConfigurationReference = F036FCCA85BE98B6916E098D /* Pods-mhine28.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = foodappui/Info.plist;
+				INFOPLIST_FILE = mhine28/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -776,7 +776,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = foodappui;
+				PRODUCT_NAME = mhine28;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -784,7 +784,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CB75A85EEF1E9720C5EBA61 /* Pods-foodappui-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 2CB75A85EEF1E9720C5EBA61 /* Pods-mhine28-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -795,14 +795,14 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "foodappui-tvOS/Info.plist";
+				INFOPLIST_FILE = "mhine28-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.foodappui-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.mhine28-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -812,7 +812,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 586DAC631036625B3C5A7F30 /* Pods-foodappui-tvOS.release.xcconfig */;
+			baseConfigurationReference = 586DAC631036625B3C5A7F30 /* Pods-mhine28-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -823,14 +823,14 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "foodappui-tvOS/Info.plist";
+				INFOPLIST_FILE = "mhine28-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.foodappui-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.mhine28-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -840,7 +840,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7F306D8CCC7E3A155791665 /* Pods-foodappui-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = A7F306D8CCC7E3A155791665 /* Pods-mhine28-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -850,24 +850,24 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "foodappui-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "mhine28-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.foodappui-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.mhine28-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/foodappui-tvOS.app/foodappui-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mhine28-tvOS.app/mhine28-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AB047B6B5556E3065CBA380 /* Pods-foodappui-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 2AB047B6B5556E3065CBA380 /* Pods-mhine28-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -877,17 +877,17 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "foodappui-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "mhine28-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.foodappui-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.mhine28-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/foodappui-tvOS.app/foodappui-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mhine28-tvOS.app/mhine28-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -1008,7 +1008,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "foodappuiTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "mhine28Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -1017,7 +1017,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "foodappui" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "mhine28" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -1026,7 +1026,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "foodappui-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "mhine28-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -1035,7 +1035,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "foodappui-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "mhine28-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -1044,7 +1044,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "foodappui" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "mhine28" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
