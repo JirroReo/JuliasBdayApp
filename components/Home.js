@@ -7,24 +7,44 @@ import {
   Image,
   FlatList,
   ScrollView,
-  TouchableOpacity,
-  ImageBackground
+  StatusBar,
+  ImageBackground,
 } from 'react-native';
+
 import Feather from 'react-native-vector-icons/Feather';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import reasonData from '../assets/data/reasonData';
-import popularData from '../assets/data/popularData';
-import christmasData from '../assets/data/christmasData';
-import colors from '../assets/colors/colors';
 import Carousel from 'react-native-snap-carousel';
-import { color, round } from 'react-native-reanimated';
+import AnimatedSplash from "react-native-animated-splash-screen";
+
+import colors from '../assets/colors/colors';
+import reasonData from '../assets/data/reasonData';
+import christmasData from '../assets/data/christmasData';
+import moaData from '../assets/data/moaData';
+import mopData from '../assets/data/mopData';
 
 Feather.loadFont();
 MaterialCommunityIcons.loadFont();
 
-export default Home = ({ navigation }) => {
+export default class Home extends React.Component {
 
-  const renderReasonItem = ({ item }) => {
+  constructor(props) {
+    super(props);
+    this._isMounted = false;
+    this.state = {
+      isLoading: true,
+    }
+  }
+
+  componentDidMount = () => {
+    this._isMounted = true;
+    this._isMounted && setTimeout(() => { this._isMounted && this.setState({ isLoading: false})},1000);
+  }
+
+  componentWillUnmount() {
+   this._isMounted = false;
+  }
+
+  renderReasonItem = ({ item }) => {
     return (
       <View
         style={[
@@ -40,7 +60,7 @@ export default Home = ({ navigation }) => {
     );
   };
 
-  const renderMemoryItem = ({ item }) => {
+  renderMemoryItem = ({ item }) => {
     return (
       <View
         style={[
@@ -50,84 +70,150 @@ export default Home = ({ navigation }) => {
       </View>
     );
   };
+ 
+  render() {
+    return (
+      <View style={styles.container}>
+        <StatusBar hidden />
+        <AnimatedSplash
+          isLoaded={!this.state.isLoading}
+          logoImage={require("../assets/images/logosq.png")}
+          backgroundColor={"#fab927"}
+          logoHeight={150}
+          logoWidth={150}
+        >
+          <ScrollView
+            contentInsetAdjustmentBehavior="automatic"
+            showsVerticalScrollIndicator={false}>
+            {/* Header */}
+            <View style={[
+              styles.headerCardWrapper,
+                {
+                  backgroundColor: colors.white,
+                  marginLeft: 20,
+                  marginRight: 20,
+                  marginTop: 100
+                },
+              ]}>
+                <ImageBackground source={require('../assets/images/bg.png')} resizeMode='cover' style={{justifyContent: 'center', borderRadius: 20}} imageStyle={{height: 294, borderRadius: 20}}>
+                <SafeAreaView>
+                  <View style={styles.headerWrapper, {marginTop: -50, alignItems: 'center'}}>
+                    <Image
+                      source={require('../assets/images/olet.jpg')}
+                      style={styles.profileImage}
+                    />
+                  </View>
+                </SafeAreaView>
+  
+                {/* Titles */}
+                <View style={styles.topTitlesWrapper}>
+                  <Text numberOfLines={1} style={{marginBottom: '-5px'}} style={styles.titlesSubtitle}>Hey,</Text>
+                  <Text numberOfLines={1} style={styles.titlesTitle}>Happy Birthday!</Text>
+                </View>
+  
+                <View style={{marginTop: 10}} style={styles.topTitlesWrapper}>
+                  <Text style={styles.categoriesTitle}>Hooray! 🎉</Text>
+                  <Text style={styles.messageItemTitle}>It's the birthday of everyone's favorite ENFP!</Text>
+                  <Text style={styles.messageItemTitle}>Happy birthday baby! I hope you like this</Text>
+                  <Text style={styles.messageItemTitle}>little gift.</Text>
+                </View>
+              </ImageBackground>
+            </View>
+  
+            {/* Reasons */}
+            <View style={styles.categoriesWrapper}>
+              <Text style={{paddingHorizontal: 20}}>
+              <Text style={styles.categoriesTitle}>Why I Love You</Text><Text style={styles.categoryItemTitle}>  (In case u forgot)</Text>
+              </Text>
+              <View style={styles.categoriesListWrapper}>
+                <FlatList
+                  showsHorizontalScrollIndicator={false}
+                  data={reasonData}
+                  renderItem={this.renderReasonItem}
+                  keyExtractor={(item) => item.id}
+                  horizontal={true}
+                />
+              </View>
+            </View>
+  
+            {/* Memories */}
+            <View style={styles.popularWrapper}>
+              <Text style={styles.popularTitle}>Our Memory Board</Text>
 
-  return (
-    <View style={styles.container}>
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        showsVerticalScrollIndicator={false}>
-        {/* Header */}
-        <SafeAreaView>
-          <View style={styles.headerWrapper}>
-            <Image
-              source={require('../assets/images/olet.jpg')}
-              style={styles.profileImage}
-            />
-          </View>
-        </SafeAreaView>
+              <View style={{display: 'flex', flex: 1, flexDirection: 'row'}}>
+                <View style={[ styles.popularCardWrapper,
+                    {
+                      marginTop: 20,
+                      flex: 1,
+                      flexDirection:'row',
+                      justifyContent: 'center',
+                    },
+                  ]}>
+                    <Carousel
+                      ref={c => carousel = c }
+                      renderItem={this.renderMemoryItem}
+                      sliderWidth={240}
+                      itemWidth={240}
+                      layout={"default"}
+                      data={christmasData}
+                      sliderHeight={400}
+                      itemHeight={400}
+                      enableSnap={true}
+                      loop={true}
+                    />
+                </View>
+    
+                <View style={[ styles.popularCardWrapper,
+                    {
+                      marginTop: 20,
+                      flex: 1,
+                      flexDirection:'row',
+                      justifyContent: 'center',
+                    },
+                  ]}>
+                    <Carousel
+                      ref={c => this.carousel = c }
+                      renderItem={this.renderMemoryItem}
+                      sliderWidth={240}
+                      itemWidth={240}
+                      layout={"default"}
+                      data={mopData}
+                      sliderHeight={400}
+                      itemHeight={400}
+                      enableSnap={true}
+                      loop={true}
+                    />
+                </View>
+                
+                <View style={[ styles.popularCardWrapper,
+                    {
+                      marginTop: 20,
+                      flex: 1,
+                      flexDirection:'row',
+                      justifyContent: 'center',
+                    },
+                  ]}>
+                    <Carousel
+                      ref={c => carousel = c }
+                      renderItem={this.renderMemoryItem}
+                      sliderWidth={240}
+                      itemWidth={240}
+                      layout={"default"}
+                      data={moaData}
+                      sliderHeight={400}
+                      itemHeight={400}
+                      enableSnap={true}
+                      loop={true}
+                    />
+                </View>
+              </View>
 
-        {/* Titles */}
-        <View style={styles.topTitlesWrapper}>
-          <Text numberOfLines={1} style={{marginBottom: '-5px'}} style={styles.titlesSubtitle}>Hey,</Text>
-          <Text numberOfLines={1} style={styles.titlesTitle}>Happy Birthday!</Text>
-        </View>
-
-        <View style={{marginTop: 10}} style={styles.topTitlesWrapper}>
-          <Text style={styles.categoriesTitle}>Hooray! 🎉</Text>
-          <Text style={styles.messageItemTitle}>It's the birthday of everyone's favorite ENFP!</Text>
-          <Text style={styles.messageItemTitle}>Happy birthday baby! I hope you like this</Text>
-          <Text style={styles.messageItemTitle}>little gift.</Text>
-        </View>
-
-        {/* Reasons */}
-        <View style={styles.categoriesWrapper}>
-          <Text style={{paddingHorizontal: 20}}>
-          <Text style={styles.categoriesTitle}>Why I Love You</Text><Text style={styles.categoryItemTitle}>  (In case u forgot)</Text>
-          </Text>
-          <View style={styles.categoriesListWrapper}>
-            <FlatList
-              showsHorizontalScrollIndicator={false}
-              data={reasonData}
-              renderItem={renderReasonItem}
-              keyExtractor={(item) => item.id}
-              horizontal={true}
-            />
-          </View>
-        </View>
-
-        {/* Memories */}
-        <View style={styles.popularWrapper}>
-          <Text style={styles.popularTitle}>Our Memory Board</Text>
-          <View
-            style={[
-              styles.popularCardWrapper,
-              {
-                marginTop: 20,
-                flex: 1,
-                flexDirection:'row',
-                justifyContent: 'center',
-              },
-            ]}>
-              {/* <FlatList
-              showsHorizontalScrollIndicator={false}
-              data={christmasData}
-              renderItem={renderMemoryItem}
-              keyExtractor={(item) => item.id}
-              horizontal={true}
-              /> */}
-              <Carousel
-                ref={c => carousel = c }
-                renderItem={renderMemoryItem}
-                sliderWidth={350}
-                itemWidth={350}
-                layout={"stack"}
-                data={christmasData}
-              />
-          </View>
-        </View>
-      </ScrollView>
-    </View>
-  );
+            </View>
+          </ScrollView>
+        </AnimatedSplash>
+      </View>
+    );
+  }
 };
 
 const styles = StyleSheet.create({
@@ -147,10 +233,20 @@ const styles = StyleSheet.create({
     borderRadius: 100,
   },
   topTitlesWrapper: {
-    marginTop: 20,
+    marginTop: 10,
     textAlign: 'center',
     justifyContent: 'center',
     alignItems: 'center',
+    paddingBottom: 20,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.23,
+    shadowRadius: 2.62,
+
+    elevation: 4,
   },
   titlesWrapper: {
     marginTop: 30,
@@ -205,6 +301,21 @@ const styles = StyleSheet.create({
     marginTop: 10,
     alignSelf: 'center'
   },
+  headerCardWrapper: {
+    backgroundColor: '#F5CA48',
+    marginRight: 20,
+    borderRadius: 20,
+    shadowColor: colors.black,
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.05,
+    shadowRadius: 10,
+    elevation: 5,
+    paddingBottom: 20,
+    marginTop: 20,
+  },
   categoryItemWrapper: {
     backgroundColor: '#F5CA48',
     marginRight: 20,
@@ -253,6 +364,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   popularCardWrapper: {
+    marginLeft: -50,
     borderRadius: 25,
     flexDirection: 'row',
     overflow: 'hidden',
